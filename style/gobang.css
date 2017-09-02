@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC-Light,'微软雅黑','Helvetica Neue',sans-serif,SimHei;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 200;
+}
+.wrap{
+    width: 800px;
+    margin: 40px auto;
+}
+.board{
+    width: 650px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+#gobang_bg {
+    position: absolute;
+    background-color: rgb(213,178,150);
+    z-index: -1;
+}
+.board h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.board h2 span{
+    color: red;
+}
+
+aside{
+    width: 150px;
+    float: right;
+    padding: 80px 20px;
+    text-align: center;
+}
+aside button{
+    width: 120px;
+    height: 40px;
+    outline: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: 2px solid rgb(213,178,150);
+    cursor: pointer;
+}
+button#cancel_btn,button#chess_btn{
+    display: none;
+}

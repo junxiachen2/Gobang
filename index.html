@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="五子棋游戏 by junxiachen" />
+    <title>五子棋游戏</title>
+    <link rel="stylesheet" href="style/gobang.css">
+</head>
+<body>
+
+<div class="wrap">
+    <aside>
+        <button id="start_computer_btn" onclick="start(true)">人机对战</button>
+        <button id="start_btn" onclick="start(false)">普通对战</button>
+        <button id="chess_btn" onclick="chess()">悔棋</button>
+        <button id="cancel_btn" onclick="cancelChess()">撤销悔棋</button>
+    </aside>
+
+    <div class="board">
+        <h2 id="explain">请选择对战模式</h2>
+        <canvas id="gobang_bg" width="600" height="600"></canvas>
+        <canvas id="gobang" width="600" height="600">
+            你的浏览器不支持canvas,请用其他浏览器打开~
+        </canvas>
+    </div>
+</div>
+
+
+<script src="script/gobang.js"></script>
+<script src="script/index.js"></script>
+</body>
+</html>
